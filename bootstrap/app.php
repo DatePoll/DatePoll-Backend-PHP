@@ -5,12 +5,11 @@ use App\Exceptions\Handler;
 use App\Http\Middleware\JwtMiddleware;
 use App\Providers\AppServiceProvider;
 use Dotenv\Exception\InvalidPathException;
-use Fruitcake\Cors\CorsServiceProvider;
-use Fruitcake\Cors\HandleCors;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Mail\Mailer as ConMailer;
 use Illuminate\Contracts\Mail\MailQueue;
+use Illuminate\Http\Middleware\HandleCors;
 use Illuminate\Mail\Mailer;
 use Illuminate\Mail\MailServiceProvider;
 use Illuminate\Redis\RedisServiceProvider;
@@ -55,7 +54,6 @@ $app->singleton(Kernel::class, AppKernel::class);
 $app->register(AppServiceProvider::class);
 
 /** Cors fix */
-$app->register(CorsServiceProvider::class);
 $app->configure('cors');
 $app->middleware([HandleCors::class]);
 

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\User\User;
+use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder {
   public function run() {
     Model::unguard();
     // Register the user seeder
-    factory(User::class, 50)->create();
+    UserFactory::new()->count(50)->create();
     Model::reguard();
   }
 }

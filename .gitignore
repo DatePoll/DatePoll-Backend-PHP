@@ -1,7 +1,5 @@
 # Dependencies
 /vendor
-/node_modules
-package-lock.json
 
 # Project specific things
 .env
@@ -19,3 +17,6 @@ _ide_helper\.php
 .php_cs.cache
 
 .phpunit.result.cache
+
+/.phpunit.cache/
+/.php-cs-fixer.cache

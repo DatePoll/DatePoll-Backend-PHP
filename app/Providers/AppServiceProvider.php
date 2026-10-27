@@ -48,6 +48,7 @@ use App\Repositories\User\UserSetting\IUserSettingRepository;
 use App\Repositories\User\UserSetting\UserSettingRepository;
 use App\Repositories\User\UserToken\IUserTokenRepository;
 use App\Repositories\User\UserToken\UserTokenRepository;
+use App\Validation\Validator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
@@ -98,5 +99,9 @@ class AppServiceProvider extends ServiceProvider {
 
   public function boot(): void {
     Schema::defaultStringLength(191);
+
+    $this->app->make('validator')->resolver(function ($translator, $data, $rules, $messages, $attributes) {
+      return new Validator($translator, $data, $rules, $messages, $attributes);
+    });
   }
 }

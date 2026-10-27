@@ -29,6 +29,9 @@ return [
   */
 
   'connections' => [
+    'sync' => [
+      'driver' => 'sync',
+    ],
     'redis' => [
       'driver' => 'redis',
       'connection' => 'default',

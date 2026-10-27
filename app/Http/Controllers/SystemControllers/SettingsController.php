@@ -124,7 +124,7 @@ class SettingsController extends Controller {
    * @throws ValidationException
    */
   public function setBroadcastsProcessIncomingEmailsForwardingEmailAddresses(AuthenticatedRequest $request): JsonResponse {
-    $this->validate($request, ['email_addresses' => 'array', 'email_addresses.*' => 'required|max:190',]);
+    $this->validate($request, ['email_addresses' => 'array', 'email_addresses.*' => 'required|string|email|max:190',]);
 
     $emailAddresses = $request->input('email_addresses');
     if (! ArrayHelper::isArray($emailAddresses)) {

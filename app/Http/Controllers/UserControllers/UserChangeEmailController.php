@@ -23,7 +23,10 @@ class UserChangeEmailController extends Controller {
    * @throws Exception
    */
   public function changeEmailAddresses(AuthenticatedRequest $request): JsonResponse {
-    $this->validate($request, ['email_addresses' => 'required|array']);
+    $this->validate($request, [
+      'email_addresses' => 'required|array',
+      'email_addresses.*' => 'required|string|email|max:190',
+    ]);
 
     $user = $request->auth;
 

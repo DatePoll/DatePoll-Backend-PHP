@@ -13,9 +13,6 @@ class UserTest extends TestCase {
   }
 
   public function testUserManagementMiddleware(): void {
-    self::assertTrue(true);
-
-    return;
 
     $nonAdmin = UserFactory::createUser('test', false);
     $jwt = UserFactory::getJWTTokenForUserId($nonAdmin->id);
@@ -33,9 +30,6 @@ class UserTest extends TestCase {
   }
 
   public function testUserCreate(): void {
-    self::assertTrue(true);
-
-    return;
 
     $admin = UserFactory::createUser('test');
     $jwt = UserFactory::getJWTTokenForUserId($admin->id);
@@ -77,9 +71,6 @@ class UserTest extends TestCase {
   }
 
   public function testUserGetAll(): void {
-    self::assertTrue(true);
-
-    return;
     $admin = UserFactory::createUser('test2');
     $jwt = UserFactory::getJWTTokenForUserId($admin->id);
 
@@ -106,23 +97,17 @@ class UserTest extends TestCase {
           'internal_comment',
           'information_denied',
           'bv_member',
-          'force_password_change',], ], ]);
+          'force_password_change', ], ], ]);
   }
 
   public function testUserUpdate(): void {
-    self::assertTrue(true);
-
-    return;
 
     $admin = UserFactory::createUser('test3');
     $jwt = UserFactory::getJWTTokenForUserId($admin->id);
 
     $response = $this->get('/api/v1/management/users?token=' . $jwt);
     $response->assertResponseStatus(200);
-    // --- Attention ---
-    // The id is at exactly this position. If user names / data changes the position may also change
-    // --- Attention ---
-    $id = substr($this->response->getContent(), strpos($this->response->getContent(), 'id') + 4, 1);
+    $id = $admin->id;
 
     $data = [
       'title' => 'Mag.',
@@ -161,9 +146,6 @@ class UserTest extends TestCase {
   }
 
   public function testUserDelete(): void {
-    self::assertTrue(true);
-
-    return;
     $user = UserFactory::createUser('test4');
     $admin = UserFactory::createUser('test5');
     $jwt = UserFactory::getJWTTokenForUserId($admin->id);

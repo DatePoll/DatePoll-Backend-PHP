@@ -65,7 +65,7 @@ class UsersController extends Controller {
       'permissions' => 'array',
       'permissions.*' => 'required|max:190',
       'email_addresses' => 'array',
-      'email_addresses.*' => 'required|max:190',]);
+      'email_addresses.*' => 'required|string|email|max:190',]);
 
     $title = $request->input('title');
     $username = $request->input('username');
@@ -188,7 +188,7 @@ class UsersController extends Controller {
       'permissions' => 'array',
       'permissions.*' => 'required|max:190',
       'email_addresses' => 'array',
-      'email_addresses.*' => 'required|max:190',]);
+      'email_addresses.*' => 'required|string|email|max:190',]);
 
     $user = $this->userRepository->getUserById($id);
     if ($user == null) {

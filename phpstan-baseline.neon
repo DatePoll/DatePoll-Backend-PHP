@@ -1,0 +1,337 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Parameter \#1 \$string1 of function strcmp expects string, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/CinemaControllers/MovieController.php
+
+		-
+			message: '#^Parameter \#2 \$string2 of function strcmp expects string, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/CinemaControllers/MovieController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$created_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$description\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$getDate\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$reason\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$updated_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$user_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/ManagementControllers/BadgeController.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\Broadcast\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/Broadcast.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\BroadcastAttachment\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/BroadcastAttachment.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\BroadcastDraft\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/BroadcastDraft.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\BroadcastForGroup\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/BroadcastForGroup.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\BroadcastForSubgroup\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/BroadcastForSubgroup.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Broadcasts\\BroadcastUserInfo\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Broadcasts/BroadcastUserInfo.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Cinema\\Movie\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Cinema/Movie.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type App\\Models\\User\\User\|Illuminate\\Database\\Eloquent\\Relations\\BelongsTo\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Models/Cinema/Movie.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Cinema\\MoviesBooking\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Cinema/MoviesBooking.php
+
+		-
+			message: '#^Method App\\Models\\Events\\Event\:\:getFirstEventDate\(\) should return App\\Models\\Events\\EventDate\|Illuminate\\Database\\Eloquent\\Relations\\HasMany but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/Events/Event.php
+
+		-
+			message: '#^Method App\\Models\\Events\\Event\:\:getLastEventDate\(\) should return App\\Models\\Events\\EventDate\|Illuminate\\Database\\Eloquent\\Relations\\HasMany but returns Illuminate\\Database\\Eloquent\\Model\|null\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/Events/Event.php
+
+		-
+			message: '#^Method App\\Models\\Events\\Event\:\:getUsersVotedForDecision\(\) should return array\<App\\Models\\Events\\EventUserVotedForDecision\> but returns array\<int, Illuminate\\Database\\Eloquent\\Model\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/Events/Event.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type App\\Models\\Events\\EventDate\|Illuminate\\Database\\Eloquent\\Relations\\HasMany\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Models/Events/Event.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventDate\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventDate.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventDecision\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventDecision.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventForGroup\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventForGroup.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventForSubgroup\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventForSubgroup.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventStandardDecision\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventStandardDecision.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventStandardLocation\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventStandardLocation.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Events\\EventUserVotedForDecision\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Events/EventUserVotedForDecision.php
+
+		-
+			message: '#^Method App\\Models\\Groups\\Group\:\:getUsersWithRolesOrderedBySurname\(\) should return array\<stdClass\> but returns list\<array\<string, int\|string\>\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Models/Groups/Group.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Groups\\Group\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Groups/Group.php
+
+		-
+			message: '#^PHPDoc tag @property for property App\\Models\\Groups\\GroupPermission\:\:\$user contains unknown class App\\Models\\Groups\\User\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Models/Groups/GroupPermission.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Groups\\GroupPermission\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Groups/GroupPermission.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\PerformanceBadge\\Badge\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/PerformanceBadge/Badge.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\PerformanceBadge\\Instrument\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/PerformanceBadge/Instrument.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\PerformanceBadge\\PerformanceBadge\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/PerformanceBadge/PerformanceBadge.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\PerformanceBadge\\UserHasBadge\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/PerformanceBadge/UserHasBadge.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\PerformanceBadge\\UserHavePerformanceBadgeWithInstrument\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/PerformanceBadge/UserHavePerformanceBadgeWithInstrument.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\SeatReservation\\Place\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/SeatReservation/Place.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\SeatReservation\\PlaceReservation\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/SeatReservation/PlaceReservation.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\SeatReservation\\PlaceReservationNotifyUsers\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/SeatReservation/PlaceReservationNotifyUsers.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\Subgroups\\Subgroup\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/Subgroups/Subgroup.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\System\\Setting\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/System/Setting.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\DeletedUser\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/DeletedUser.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\User\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/User.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\UserChange\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserChange.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\UserCode\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserCode.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\UserEmailAddress\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserEmailAddress.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\UserPermission\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserPermission.php
+
+		-
+			message: '#^PHPDoc type array\<string\> of property App\\Models\\User\\UserTelephoneNumber\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserTelephoneNumber.php
+
+		-
+			message: '#^PHPDoc type array\<string\> of property App\\Models\\User\\UserTelephoneNumber\:\:\$hidden is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$hidden\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserTelephoneNumber.php
+
+		-
+			message: '#^PHPDoc type array of property App\\Models\\User\\UserToken\:\:\$fillable is not covariant with PHPDoc type list\<string\> of overridden property Illuminate\\Database\\Eloquent\\Model\:\:\$fillable\.$#'
+			identifier: property.phpDocType
+			count: 1
+			path: app/Models/User/UserToken.php
+
+		-
+			message: '#^Method App\\Repositories\\SeatReservation\\UserSeatReservation\\UserSeatReservationRepository\:\:getUpcomingPlaceReservationsOrderedByDate\(\) should return array\<App\\Models\\SeatReservation\\PlaceReservation\> but returns array\<int, stdClass\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Repositories/SeatReservation/UserSeatReservation/UserSeatReservationRepository.php
+
+		-
+			message: '#^Method App\\Repositories\\System\\Job\\JobRepository\:\:getUndoneJobs\(\) should return array\<App\\Jobs\\Job\> but returns array\<int, stdClass\>\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Repositories/System/Job/JobRepository.php
+
+		-
+			message: '#^Left side of && is always true\.$#'
+			identifier: booleanAnd.leftAlwaysTrue
+			count: 2
+			path: app/Utils/StringHelper.php
+
+		-
+			message: '#^Right side of && is always true\.$#'
+			identifier: booleanAnd.rightAlwaysTrue
+			count: 2
+			path: app/Utils/StringHelper.php
