@@ -11,4 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY --from=composer /usr/bin/composer /usr/local/bin/composer
 
+# CI bind-mounts a checkout owned by the runner.
+RUN git config --system --add safe.directory /backend
+
 WORKDIR /backend
