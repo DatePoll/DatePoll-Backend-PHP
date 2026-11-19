@@ -4,7 +4,7 @@ The PHP API uses Lumen 11.2.0. Direct production and development packages have e
 
 ## Runtime and installation
 
-Use PHP 8.3.36 and Composer 2.10.3. Both Docker base images are pinned by digest in `.github/docker/Dockerfile` and in the separate `DatePoll-Dockerized/phpDockerfile`. The images include IMAP, PDO MySQL, PDO SQLite, mbstring, and the other required extensions. GitHub Actions builds the CI image directly from this backend repository.
+Use PHP 8.3.37 and Composer 2.10.3. Both Docker base images are pinned by digest in `.github/docker/Dockerfile` and in the separate `DatePoll-Dockerized/phpDockerfile`. The images include IMAP, PDO MySQL, PDO SQLite, mbstring, and the other required extensions. GitHub Actions builds the CI image directly from this backend repository.
 
 From this backend repository root:
 

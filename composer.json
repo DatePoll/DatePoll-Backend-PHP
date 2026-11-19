@@ -10,7 +10,7 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=8.3.36 <8.4",
+        "php": ">=8.3.37 <8.4",
         "ext-fileinfo": "*",
         "ext-iconv": "*",
         "ext-imap": "*",
@@ -67,7 +67,7 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "platform": {
-            "php": "8.3.36"
+            "php": "8.3.37"
         },
         "allow-plugins": false,
         "policy": {
